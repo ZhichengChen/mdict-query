@@ -81,7 +81,7 @@ def search(query):
     return(resp)
 
 
-@app.route('/dict/<title>/<regex(".+?\."):base><regex("css|png|jpg|gif|mp3|js|wav|ogg"):ext>')
+@app.route('/dict/<title>/<regex(".+?\."):base><regex("css|png|jpg|gif|mp3|js|wav|ogg|spx"):ext>')
 def getFile(title,base,ext):
     #print(base + ext, file=sys.stderr)
     if title not in mdx_map:
