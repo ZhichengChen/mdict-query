@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*
 from flask import Flask, send_from_directory, abort, render_template, jsonify, Response
 from mdict_dir import Dir
 #from mdict_query import IndexBuilder
